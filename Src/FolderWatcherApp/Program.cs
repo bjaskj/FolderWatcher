@@ -39,13 +39,11 @@ namespace FolderWatcherApp
 
         private static void WatcherOnRenamed(object sender, RenamedEventArgs renamedEventArgs)
         {
-            //Console.WriteLine("WatcherOnRenamed {0} : {1}", renamedEventArgs.ChangeType, renamedEventArgs.FullPath);
             _exit = true;
         }
 
         private static void WatcherOnChanged(object sender, FileSystemEventArgs fileSystemEventArgs)
         {
-            //Console.WriteLine("WatcherOnChanged {0} : {1}", fileSystemEventArgs.ChangeType, fileSystemEventArgs.FullPath);
             _exit = true;
         }
     }
